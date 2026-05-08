@@ -9,6 +9,8 @@ The project is organized into the following directories:
 *   **`classes/`**: Contains core logic and basic demonstrations.
     *   `Basic.java`: Demonstrates naming rules, case sensitivity, console printing, and basic arithmetic operations.
     *   `Student.java`: An introduction to objects, fields, and instance methods.
+    *   `CurrencyConverter.java`: Demonstrates variable naming conventions and default field values using various world currencies.
+
 *   **`examples/`**: Contains standalone examples.
     *   `HelloWorld.java`: The classic introductory program.
 
@@ -27,6 +29,13 @@ java Basic.java
 cd classes
 java Student.java
 ```
+
+### Running CurrencyConverter.java
+```bash
+cd classes
+java CurrencyConverter.java
+```
+
 
 ### Running HelloWorld.java
 ```bash
