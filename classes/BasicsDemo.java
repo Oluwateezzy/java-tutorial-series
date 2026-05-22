@@ -20,6 +20,14 @@ public class BasicsDemo {
 
         int octBinary = 0101;
         System.out.println("octBinary " + octBinary);
+
+        char charInt = 65;
+        char charHex = 0x0041;
+        char charBin = 0b0100_0001;
+
+        System.out.println("charInt " + charInt);
+        System.out.println("charHex " + charHex);
+        System.out.println("charBin " + charBin);
     }
 
     public static void main(String[] args) {
