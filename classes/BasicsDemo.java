@@ -30,24 +30,54 @@ public class BasicsDemo {
         System.out.println("charBin " + charBin);
     }
 
+    static void typeCasting() {
+        System.out.println("\nInside typeCasting ...");
+        // Explicit
+        long y = 42;
+        int x = (int) y;
+
+        // information loss due to out of range assignment
+        byte narrowdByte = (byte) 123456;
+        System.out.println("narrowdByte " + narrowdByte);
+
+        // Truncation
+        int itruncated = (int) 0.99;
+        System.out.println("itruncated " + itruncated);
+
+        // implicit cast (int to long)
+        y = x;
+
+        // Implicit cast (char to int)
+        char cChar = 'A';
+        int iInt = cChar;
+        System.out.println("iInt " + iInt);
+
+        // byte to char using an implicit cast
+        byte bByte = 65;
+        cChar = (char) bByte;
+        System.out.println("cChar " + cChar);
+    }
+
     public static void main(String[] args) {
-        primitives();
+        // primitives();
 
-        System.out.println(1 - 0.9);
-        System.out.println(0.1 + 0.2);
+        // System.out.println(1 - 0.9);
+        // System.out.println(0.1 + 0.2);
 
-        double price = 1000;
-        double discountPercent = 0.9;
-        double discountAmount = price * discountPercent;
+        // double price = 1000;
+        // double discountPercent = 0.9;
+        // double discountAmount = price * discountPercent;
 
-        System.out.println(discountAmount);
-        System.out.println(price - discountAmount);
-        System.out.println(price * (1 - discountPercent));
+        // System.out.println(discountAmount);
+        // System.out.println(price - discountAmount);
+        // System.out.println(price * (1 - discountPercent));
 
 
-        BigDecimal first = new BigDecimal("0.1");
-        BigDecimal second = new BigDecimal("0.2");
-        System.out.println(first.add(second));
+        // BigDecimal first = new BigDecimal("0.1");
+        // BigDecimal second = new BigDecimal("0.2");
+        // System.out.println(first.add(second));
+
+        typeCasting();
 
     }
 }
