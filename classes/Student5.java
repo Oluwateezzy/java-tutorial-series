@@ -9,8 +9,7 @@ public class Student5 {
     void compute() {
         computeCount = computeCount + 1;
 
-        double internationalfee = 500.0;
-        double tutionFees = 1200.0;
+        double internationalfee = 500.0, tutionFees = 1200.0;
 
         System.out.println("name " + name);
         System.out.println("gender " + gender);
