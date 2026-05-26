@@ -58,6 +58,8 @@ public class BasicsDemo {
         System.out.println("cChar " + cChar);
     }
 
+    static int count = 25;
+
     public static void main(String[] args) {
         // primitives();
 
