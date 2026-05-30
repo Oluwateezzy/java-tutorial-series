@@ -77,6 +77,26 @@ public class BasicsDemo {
         System.out.println("score 2 " + scores[1]);
         System.out.println("score 3 " + scores[2]);
         System.out.println("score 4 " + scores[3]);
+        System.out.println("Size " + scores.length);
+
+        // Student[] students = new Student[3];
+        // students[0] = new Student();
+        // students[1] = new Student();
+        // students[2] = new Student();
+
+        // Student[] students = new Student[] {new Student(), new Student(), new Student()};
+        
+        Student[] students = {new Student(), new Student(), new Student()};
+
+        students[0].name = "John";
+        students[1].name = "ola";
+        students[2].name = "tobi";
+
+        System.out.println("student 1 " + students[0].name);
+        System.out.println("student 2 " + students[1].name);
+        System.out.println("student 3 " + students[2].name);
+
+
 
     }
 

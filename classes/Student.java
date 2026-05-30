@@ -1,6 +1,8 @@
 public class Student {
     int id = 1000;
     int nextId = 1 + id;
+    String name;
+
 
     void compute() {
         System.out.println(id);
