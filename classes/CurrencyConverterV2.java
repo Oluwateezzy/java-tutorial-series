@@ -1,5 +1,5 @@
 public class CurrencyConverterV2 {
-    double[] exchangeRates;
+    double[] exchangeRates = new double[] {63.0, 3.0, 3.0, 595.5, 18.0, 107.0, 2.0};
 
     void setExchangeRates(double[] rates) {
         exchangeRates = rates;
@@ -27,35 +27,35 @@ public class CurrencyConverterV2 {
         System.out.println("$australian: " + exchangeRates[exchangeRates.length - 1] + "\n");
     }
 
-    public static void main(String[] args) {
-        CurrencyConverterV2 currencyConverter = new CurrencyConverterV2();
-        double[] rates = new double[] {
-                63.0,
-                3.0,
-                3.0,
-                595.0,
-                18.0,
-                107.0,
-                2.0
-        };
-        currencyConverter.setExchangeRates(rates);
-        currencyConverter.printCurrencies();
+    // public static void main(String[] args) {
+    //     CurrencyConverterV2 currencyConverter = new CurrencyConverterV2();
+    //     double[] rates = new double[] {
+    //             63.0,
+    //             3.0,
+    //             3.0,
+    //             595.0,
+    //             18.0,
+    //             107.0,
+    //             2.0
+    //     };
+    //     currencyConverter.setExchangeRates(rates);
+    //     currencyConverter.printCurrencies();
 
-        rates = new double[] {
-                65.0,
-                3.0,
-                3.0,
-                595.0,
-                18.0,
-                107.0,
-                2.0
-        };
-        currencyConverter.setExchangeRates(rates);
-        currencyConverter.printCurrencies();
+    //     rates = new double[] {
+    //             65.0,
+    //             3.0,
+    //             3.0,
+    //             595.0,
+    //             18.0,
+    //             107.0,
+    //             2.0
+    //     };
+    //     currencyConverter.setExchangeRates(rates);
+    //     currencyConverter.printCurrencies();
 
-        currencyConverter.updateExchangeRate(0, 32.0);
-        currencyConverter.printCurrencies();
+    //     currencyConverter.updateExchangeRate(0, 32.0);
+    //     currencyConverter.printCurrencies();
 
-        System.out.println("\n Transfer Amount " + currencyConverter.computeTransferAmount(0, 337));
-    }
+    //     System.out.println("\n Transfer Amount " + currencyConverter.computeTransferAmount(0, 337));
+    // }
 }
