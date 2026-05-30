@@ -60,6 +60,26 @@ public class BasicsDemo {
 
     static int count = 25;
 
+    static void arrays() {
+        System.out.println("\nInside arrays ...");
+        // int[] scores = new int[4];
+        // scores[0] = 90;
+        // scores[1] = 40;
+        // scores[2] = 30;
+        // scores[3] = 60;
+
+        // int[] scores = new int[] {90, 40, 30, 60};
+
+        int[] scores = {90, 40, 30, 60};
+
+
+        System.out.println("score 1 " + scores[0]);
+        System.out.println("score 2 " + scores[1]);
+        System.out.println("score 3 " + scores[2]);
+        System.out.println("score 4 " + scores[3]);
+
+    }
+
     public static void main(String[] args) {
         // primitives();
 
@@ -79,7 +99,8 @@ public class BasicsDemo {
         // BigDecimal second = new BigDecimal("0.2");
         // System.out.println(first.add(second));
 
-        typeCasting();
+        // typeCasting();
 
+        arrays();
     }
 }
