@@ -131,6 +131,19 @@ public class BasicsDemo {
         System.out.println("unitsSold[0][3][1] " + unitsSold[0][3][1]);
     }
 
+    static double sum(double x, double y) {
+        return x + y;
+    }
+
+    static double avg(double x, double y) {
+        double sum = sum(x, y);
+        return sum / 2;
+    }
+
+    static boolean search(int[] list, int key) {
+        return true;
+    }
+
     public static void main(String[] args) {
         // primitives();
 
@@ -154,6 +167,12 @@ public class BasicsDemo {
 
         // arrays();
 
-        threeDimensionalArrays();
+        // threeDimensionalArrays();
+
+        // System.out.println(avg(3, 2));
+
+        int[] list = {1, 2};
+
+        System.out.println(search(list, 2));
     }
 }
