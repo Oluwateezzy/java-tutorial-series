@@ -148,6 +148,14 @@ public class BasicsDemo {
         array[1] = 22;
     }
 
+    static void go(int i) {
+        System.out.println("array i");
+    }
+
+    static void go(short s) {
+        System.out.println("short s");
+    }
+
     public static void main(String[] args) {
         // primitives();
 
@@ -178,6 +186,11 @@ public class BasicsDemo {
         int[] list = {1, 2};
         go(list);
         System.out.println("list[1] " + list[1]);
+
+        go(1000);
+
+        short b = 22;
+        go(b);
 
         // System.out.println(search(list, 2));
 
