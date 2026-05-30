@@ -1,5 +1,3 @@
-import java.math.BigDecimal;
-
 public class BasicsDemo {
     static void print() {
         System.out.println("\n\nInside print...");
@@ -144,6 +142,12 @@ public class BasicsDemo {
         return true;
     }
 
+    static void go(int[] array) {
+        System.out.println("array[0] " + array[0]);
+        System.out.println("array[1] " + array[1]);
+        array[1] = 22;
+    }
+
     public static void main(String[] args) {
         // primitives();
 
@@ -172,7 +176,10 @@ public class BasicsDemo {
         // System.out.println(avg(3, 2));
 
         int[] list = {1, 2};
+        go(list);
+        System.out.println("list[1] " + list[1]);
 
-        System.out.println(search(list, 2));
+        // System.out.println(search(list, 2));
+
     }
 }
