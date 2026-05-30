@@ -95,9 +95,40 @@ public class BasicsDemo {
         System.out.println("student 1 " + students[0].name);
         System.out.println("student 2 " + students[1].name);
         System.out.println("student 3 " + students[2].name);
+    }
 
+    static void threeDimensionalArrays() {
+        System.out.println("\nInside three Dimensional Arrays ...");
+        int[][][] unitsSold = new int[][][] {
+            {
+                // New york
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 850, 0, 0} // Apr
+            },
+            {
+                // San Franscisco
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0} // Apr
+            },
+            {
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0} // Apr
+            },
+            {
+                {0, 0, 0, 0}, // Jan
+                {0, 0, 0, 0}, // Feb
+                {0, 0, 0, 0}, // Mar
+                {0, 0, 0, 0} // Apr
+            }
+        };
 
-
+        System.out.println("unitsSold[0][3][1] " + unitsSold[0][3][1]);
     }
 
     public static void main(String[] args) {
@@ -121,6 +152,8 @@ public class BasicsDemo {
 
         // typeCasting();
 
-        arrays();
+        // arrays();
+
+        threeDimensionalArrays();
     }
 }
