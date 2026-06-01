@@ -156,6 +156,14 @@ public class BasicsDemo {
         System.out.println("short s");
     }
 
+    static void varargsOverload(boolean b, int i, int j, int k) {
+        System.out.println("\ninside varargsOverload without varargs...");
+    }
+    static void varargsOverload(boolean b, int... list) {
+        System.out.println("\ninside varargsOverload with varargs...");
+        System.out.println("list.length: " + list.length);
+    }
+
     public static void main(String[] args) {
         // primitives();
 
@@ -183,16 +191,19 @@ public class BasicsDemo {
 
         // System.out.println(avg(3, 2));
 
-        int[] list = {1, 2};
-        go(list);
-        System.out.println("list[1] " + list[1]);
+        // int[] list = {1, 2};
+        // go(list);
+        // System.out.println("list[1] " + list[1]);
 
-        go(1000);
+        // go(1000);
 
-        short b = 22;
-        go(b);
+        // short b = 22;
+        // go(b);
 
         // System.out.println(search(list, 2));
 
+        varargsOverload(true, 1, 2, 3);
+        varargsOverload(true, 1, 2, 3, 4, 5, 6, 7, 8);
+        varargsOverload(true);
     }
 }
