@@ -11,6 +11,8 @@ public class Student5 {
         gender = nGender;
         age = nAge;
         international = nInternational;
+
+        compute();
     }
 
     Student5(String nName, String nGender, int nAge) {
@@ -35,18 +37,18 @@ public class Student5 {
     }
 
     public static void main(String[] args) {
-        Student5 student = new Student5("john", "male", 18, true);
+        new Student5("john", "male", 18, true);
         // student.name = "john";
         // student.gender = "male";
         // student.age = 18;
         // student.international = true;
-        student.compute();
+        // student.compute();
 
-        Student5 student1 = new Student5("ola", "male", 18);
+        new Student5("ola", "male", 18);
         // student1.name = "ola";
         // student1.gender = "male";
         // student1.age = 18;
-        student1.compute();
+        // student1.compute();
 
          System.out.println("Student compute " + Student5.computeCount);
     }
