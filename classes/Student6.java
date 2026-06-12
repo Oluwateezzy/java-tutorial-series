@@ -38,14 +38,14 @@
 			  //return;
 		  }	
 		  
-	      System.out.println("\nid: " + id);
+	      System.out.println("\nid: " + this.id);
 		  System.out.println("nextId: " + nextId);
-		  System.out.println("name: " + name);
-		  System.out.println("gender: " + gender);
-		  System.out.println("age: " + age);
-		  System.out.println("phone: " + phone);
-		  System.out.println("gpa: " + gpa);
-		  System.out.println("degree: " + degree);
+		  System.out.println("name: " + this.name);
+		  System.out.println("gender: " + this.gender);
+		  System.out.println("age: " + this.age);
+		  System.out.println("phone: " + this.phone);
+		  System.out.println("gpa: " + this.gpa);
+		  System.out.println("degree: " + this.degree);
 		  System.out.println("tuitionFees: " + tuitionFees);
 		  System.out.println("studentCount: " + studentCount);
 	  }
