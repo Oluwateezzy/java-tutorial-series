@@ -16,8 +16,18 @@ public class Student5 {
     }
 
     Student5(String nName, String nGender, int nAge) {
-        this(nName, nGender, nAge, false);
+        name = nName;
+        gender = nGender;
+        age = nAge;
+
+        compute();
     }
+
+    // Student5(String nName, String nGender, int nAge) {
+    //     this(nName, nGender, nAge, false);
+    // }
+
+    Student5(){}
 
     void compute() {
         computeCount = computeCount + 1;
