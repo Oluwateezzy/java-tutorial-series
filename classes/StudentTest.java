@@ -36,17 +36,17 @@ public class StudentTest {
         //   System.out.println("Student 1: " + student1.name);
 
         Student6[] students = {student1, student2, student3};
-        swap(students);
+        swap(students, 0, 2);
+
+        System.out.println("Student 1: " + students[0].name);
+        System.out.println("Student 2: " + students[1].name);
+        System.out.println("Student 3: " + students[2].name);
 
 	  }
 
-      static void swap(Student6[] studentsData){
-        Student6 student4 = studentsData[0];
-        studentsData[0] = studentsData[2];
-        studentsData[2] = student4;
-
-        System.out.println("Student 1: " + studentsData[0].name);
-        System.out.println("Student 2: " + studentsData[1].name);
-        System.out.println("Student 3: " + studentsData[2].name);
+      static void swap(Student6[] studentsData, int firstIndex, int secondIndex){
+        Student6 student4 = studentsData[firstIndex];
+        studentsData[firstIndex] = studentsData[secondIndex];
+        studentsData[secondIndex] = student4;
       }
 }
