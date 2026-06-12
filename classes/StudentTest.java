@@ -15,24 +15,33 @@ public class StudentTest {
           student1.updateProfile("john");
           System.out.println("Updated Student 1: " + student1.name);
 
-          Student6 student4 = student1;
+        //   Student6 student4 = student1;
 
-          System.out.println("Student 4: " + student4.name);
+        //   System.out.println("Student 4: " + student4.name);
 
-          student4.updateProfile("mike");
-          System.out.println("Student 1: " + student1.name);
+        //   student4.updateProfile("mike");
+        //   System.out.println("Student 1: " + student1.name);
 
-          student4 = student2;
-          System.out.println("Student 4: " + student4.name);
+        //   student4 = student2;
+        //   System.out.println("Student 4: " + student4.name);
 
-          student2 = student1;
-          System.out.println("Student 4: " + student4.name);
-          System.out.println("Student 2: " + student2.name);
+        //   student2 = student1;
+        //   System.out.println("Student 4: " + student4.name);
+        //   System.out.println("Student 2: " + student2.name);
 
-          student4 = new Student6();
-          student4.updateProfile("Alex");
-          System.out.println("Student 4: " + student4.name);
-          System.out.println("Student 2: " + student2.name);
-          System.out.println("Student 1: " + student1.name);
+        //   student4 = new Student6();
+        //   student4.updateProfile("Alex");
+        //   System.out.println("Student 4: " + student4.name);
+        //   System.out.println("Student 2: " + student2.name);
+        //   System.out.println("Student 1: " + student1.name);
+
+        Student6[] students = {student1, student2, student3};
+        Student6 student4 = students[0];
+        students[0] = students[2];
+        students[2] = student4;
+
+        System.out.println("Student 1: " + students[0].name);
+        System.out.println("Student 2: " + students[1].name);
+        System.out.println("Student 3: " + students[2].name);
 	  }
 }
