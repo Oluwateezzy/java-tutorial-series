@@ -14,9 +14,9 @@
 	  double tuitionFees = 12000.0;
 	  double internationalFees = 5000.0;
 	  
-	  Student6(int newId, String newName, String newGender, int newAge, long newPhone, double newGpa, 
-					char newDegree) {		  
-	      this(newId, newName, newGender, newAge, newPhone, newGpa, newDegree, false);		  
+	  Student6(int id, String name, String gender, int age, long phone, double gpa, 
+					char degree) {		  
+	      this(id, name, gender, age, phone, gpa, degree, false);		  
 	  }
 	  
 	  Student6(int id, String name, String gender, int age, long phone, double gpa, 
