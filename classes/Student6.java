@@ -19,16 +19,16 @@
 	      this(newId, newName, newGender, newAge, newPhone, newGpa, newDegree, false);		  
 	  }
 	  
-	  Student6(int newId, String newName, String newGender, int newAge, long newPhone, double newGpa, 
-					char newDegree, boolean isInternational) {
-		  id = newId;
-		  name = newName;
-		  gender = newGender;
-		  age = newAge;
-		  phone = newPhone;
-		  gpa = newGpa;
-		  degree = newDegree;
-		  international = isInternational;
+	  Student6(int id, String name, String gender, int age, long phone, double gpa, 
+					char degree, boolean international) {
+		  this.id = id;
+		  this.name = name;
+		  this.gender = gender;
+		  this.age = age;
+		  this.phone = phone;
+		  this.gpa = gpa;
+		  this.degree = degree;
+		  this.international = international;
 		  
 		  studentCount = studentCount + 1;
 		  int nextId = id + 1;		  
@@ -61,5 +61,9 @@
 		  Student6 student3 = new Student6(1002, "Anita", "female", 20, 223_456_8888L, 4.0, 'M', true);
 		  
 		  System.out.println("Student.studentCount: " + Student6.studentCount);
+
+          System.out.println("Student 1: " + student1.name);
+          System.out.println("Student 2: " + student2.name);
+          System.out.println("Student 3: " + student3.name);
 	  }
   }
