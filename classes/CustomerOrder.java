@@ -2,21 +2,34 @@ public class CustomerOrder {
 
     // define static variable
     static int orderNumber = 1000;
-    static double seniorDiscount = 2;
-    static double price = 10.0;
+    static double seniorDiscount = 2.0;
 
-    // define instance variable
+     // define instance variable
     int quantity = 1;
-    double orderAmount;
     boolean seniorCitizen;
 
-    // generate order information
-    void generateOrderBill(){
+    public CustomerOrder(int quantity, boolean seniorCitizen) {
+        this.quantity = quantity;
+        this.seniorCitizen = seniorCitizen;
+
         orderNumber = orderNumber + 1;
+    }
+    public CustomerOrder(int quantity) {
+        this(quantity, false);
+    }
+
+    double orderAmount = 0.0;
+
+    // generate order information
+    double generateOrderBill(){
+        double price = Menu.price;
+
         orderAmount = price * quantity;
 
         if (seniorCitizen) {
             orderAmount = orderAmount - seniorDiscount;
         }
+
+        return orderAmount;
     }
 }
